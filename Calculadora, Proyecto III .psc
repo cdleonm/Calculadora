@@ -5,13 +5,13 @@ Algoritmo Calculadora
 		
 	escribir "#1 : Suma "; 
 	Escribir "#2 : Resta";
-	escribir "#3 : Multiplicación";
+	escribir "#3 : MultiplicaciÃ³n";
 	escribir "#4 : Division";
 	escribir "#5 : Sumar los valores de la matriz";
 	escribir "#6 : Restar todos los valores de la matriz";
 	escribir "#7 : Suma de matrices";
 	escribir "#8 : Resta de Matrices";
-	escribir "#9 : Triangulo con números";
+	escribir "#9 : Triangulo con nÃºmeros";
 	escribir "#10 : Rectangulo con Asteriscos";
 	
 	Leer op;
@@ -19,12 +19,12 @@ Algoritmo Calculadora
 	Segun op Hacer
 		1:
 			// Suma
-			// Se solicita al usuario que ingrese la cantidad de números a sumar
+			// Se solicita al usuario que ingrese la cantidad de nÃºmeros a sumar
 			Escribir "ingrese cantidad de numeros a Sumar";
 			Leer Cantidad;
 			// Variable para almacenar la suma total
 			s <- 0; 
-			// Bucle principal para solicitar los números y realizar la suma
+			// Bucle principal para solicitar los nÃºmeros y realizar la suma
 			Para i<-1 Hasta Cantidad Con Paso 1 Hacer
 				escribir "ingrese numero a Sumar";
 				leer res;
@@ -39,7 +39,7 @@ Algoritmo Calculadora
 			Escribir "ingrese cantidad de numeros a Restar";
 			Leer Cantidad;
 			r <- 0;
-			// Iterar sobre los números a restar
+			// Iterar sobre los nÃºmeros a restar
 			Para i<-1 Hasta Cantidad Con Paso 1 Hacer
 				escribir "ingrese numero a restar";
 				leer res;
@@ -55,15 +55,15 @@ Algoritmo Calculadora
 			
 			
 		3:
-			//Multiplicación
-			Escribir "ingrese cantidad de numeros a multiplicación";
+			//MultiplicaciÃ³n
+			Escribir "ingrese cantidad de numeros a multiplicaciÃ³n";
 			Leer Cantidad;
 			r <- 0;
-			// Iterar sobre los números a multiplicar
+			// Iterar sobre los nÃºmeros a multiplicar
 			Para i<-1 Hasta Cantidad Con Paso 1 Hacer
 				escribir "ingrese numero a multiplicar";
 				leer res;
-				// Realizar la multiplicación
+				// Realizar la multiplicaciÃ³n
 				si i <- 1 Entonces
 					m <- res;
 				SiNo
@@ -71,17 +71,17 @@ Algoritmo Calculadora
 				FinSi
 				
 			Fin Para
-			escribir "el total de la multiplicación es ", m;
+			escribir "el total de la multiplicaciÃ³n es ", m;
 		4:
-			//División
-			Escribir "ingrese cantidad de numeros a multiplicación";
+			//DivisiÃ³n
+			Escribir "ingrese cantidad de numeros a multiplicaciÃ³n";
 			Leer Cantidad;
 			d <- 0;
-			// Iterar sobre los números a dividir
+			// Iterar sobre los nÃºmeros a dividir
 			Para i<-1 Hasta Cantidad Con Paso 1 Hacer
 				escribir "ingrese numero a dividir";
 				leer res;
-				// Realizar la división
+				// Realizar la divisiÃ³n
 				si i = 1 Entonces
 					d <- res;
 				SiNo
@@ -251,21 +251,21 @@ Algoritmo Calculadora
 			escribir " La resta total de las matrices es " , r;
 		9:
 			
-			// Triángulo con números
-			Escribir "Ingrese el número de filas: ";
+			// TriÃ¡ngulo con nÃºmeros
+			Escribir "Ingrese el nÃºmero de filas: ";
 			Leer n;
-			// Bucle principal para generar el triángulo descendente de números
+			// Bucle principal para generar el triÃ¡ngulo descendente de nÃºmeros
 			Para i <- 1 Hasta n Con Paso 2 Hacer
-				// Bucle secundario para imprimir los números en cada fila
+				// Bucle secundario para imprimir los nÃºmeros en cada fila
 				Para j <- i Hasta 1 Con Paso -2 Hacer
 					Escribir sin saltar "  ", j;
 				FinPara
-				Escribir "";// Salto de línea para la siguiente fila
+				Escribir "";// Salto de lÃ­nea para la siguiente fila
 				
 			FinPara
 		10: 
-			//Rectángulo con asteriscos
-			// Se solicita al usuario que ingrese la cantidad de números para crear un cuadrado
+			//RectÃ¡ngulo con asteriscos
+			// Se solicita al usuario que ingrese la cantidad de nÃºmeros para crear un cuadrado
 			escribir "ingrese la cantidad de numeros para hacer su cuadrado";
 			leer cantidad;
 			para i <- 0 hasta cantidad  - 1 con paso 1 Hacer
@@ -282,7 +282,7 @@ Algoritmo Calculadora
 	
 	Fin Segun
 	// Pregunta al usuario si desea repetir el programa
-	escribir "¿Desea repetir el programa? (s/n): ";
+	escribir "Â¿Desea repetir el programa? (s/n): ";
 	leer respuesta;
 	
 hasta que respuesta == "n";
